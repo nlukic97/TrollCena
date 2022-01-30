@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Trol Cena",
+  "description": "This extension will check for automatic browser updates.",
+  "version": "1.0",  
+  "content_scripts": [
+    {
+      "matches":["http://*/*","https://*/*"],
+      "js": ["index.js"],
+      "css":["style.css"]
+    }
+  ]
+}

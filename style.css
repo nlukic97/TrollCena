@@ -1,0 +1,43 @@
+body {
+  /* overflow: hidden; */
+}
+
+#ceena {
+  opacity: 0;
+  position:fixed;
+  top:0;
+  left:0;
+  height: 100vh;
+  height: 100%;
+  z-index:5001;
+  width: 100%;
+  overflow: hidden;
+}
+
+#theBox {
+  background-color: #000;
+  width: 100%;
+  height:100vh;
+  position: fixed;
+  z-index: 5002;
+  top:0;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#trol {
+  width:200px;
+  height:200px;
+  position: sticky;
+}
+
+h2#mesg {
+  color:#fff!important;
+  text-align: center;
+  display: block;
+  font-size:25px!important;
+}
