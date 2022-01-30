@@ -10,7 +10,7 @@
 ### 3. Enable "Developer mode"
 ### 4. Click "Load unpacked", and select the folder you have just unpacked.
 ### 5. Make sure the application is turned on
-### 6. Have fun.
+### 6. When the user loads any page and clicks anywhere, they will have an unusual surprise. Have fun.
 
 ---
 
