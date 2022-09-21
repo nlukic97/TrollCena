@@ -1,5 +1,22 @@
 var ready = false;
 
+/* Add images here, and  random one will be generated every time this happens */
+const imageList = {
+  trol:'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Ftrollface%2Ftrollface_PNG41.png&f=1&nofb=1',
+  cenaGif:'https://c.tenor.com/KfmfcxuOI1YAAAAC/wwe.gif'
+}
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+}
+
+function getRandomImage(){
+  const keys = Object.keys(imageList)
+  return imageList[keys[getRandomIntInclusive(0, keys.length - 1)]]
+}
+
 (function activate(){
   var num = 0;
   var monitor = setInterval(()=>{
@@ -12,7 +29,7 @@ var ready = false;
         
         let img = document.createElement('img')
         img.id='trol'
-        img.src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Ftrollface%2Ftrollface_PNG41.png&f=1&nofb=1'
+        img.src= getRandomImage()
         img.alt = 'trol'
         document.getElementById('theBox').appendChild(img)
         
